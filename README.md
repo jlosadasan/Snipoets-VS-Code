@@ -11,3 +11,5 @@ To add snippets might follow this rules:
 
 
 Thank you to colaborate in the future!
+
+More info: https://code.visualstudio.com/docs/editor/userdefinedsnippets
