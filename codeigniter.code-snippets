@@ -1,0 +1,18 @@
+{
+	"New translation variable": {
+		"scope": "php, html",
+		"prefix": "lan",
+		"body": [
+			"\\$lang['$1'] = \"$2\";"
+		],
+		"description": "Crear una nueva variable para el diccionario"
+	},
+	"Echo $lang": {
+		"scope": "php, html",
+		"prefix": "elang",
+		"body": [
+			"<?php echo lang('$1'); ?>"
+		],
+		"description": "Imprime una varibale del diccionario"
+	}
+}
