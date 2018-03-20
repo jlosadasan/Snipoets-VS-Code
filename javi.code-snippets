@@ -1,0 +1,106 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Enclousure PHP": {
+		"scope": "php, html",
+		"prefix": "php",
+		"body": [
+			"<?php $1 ?> $2"
+		],
+		"description": "Enclousure tags php for views"
+	},
+	"PHP echo": {
+		"scope": "php, html, javascript",
+		"prefix": "pecho",
+		"body": [
+			"<?php echo $$1; ?> $2"
+		],
+		"description": "Enclousure tags php for echo variable"
+	},
+	"PHP form open": {
+		"scope": "php, html",
+		"prefix": "openf",
+		"body": [
+			"<?php \\$definitions = array('accept-chartset' => 'utf-8', 'method'=> 'POST', 'name' => '${1:name}', 'id' => '${2:name}' );",
+			"\t\t\techo form_open(\"${3:action}\", \\$definitions); ?>",
+			"$0"
+		],
+		"description": "Form open with codeigniter"
+	},
+	"PHP form close": {
+		"scope": "php, html",
+		"prefix": "closef",
+		"body": [
+			"<?php echo form_close(); ?>",
+			"$1"
+		],
+		"description": "Form close with codeigniter"
+	},
+	"JS ajax": {
+		"scope": "javascript, typescript",
+		"prefix": "ajax",
+		"body": [
+			"\\$.ajax({",
+				"\tmethod:'POST',",
+				"\turl:'${1:controller}',",
+				"\tdata:'${2:data json}',",
+				"\tsuccess: function(data){",
+				"\t\t $3",
+				"\t},",
+				"\terror: function(data){",
+				"\t\t $4",
+				"\t},",
+			"});",
+			"$0"
+		],
+		"description": "Form close with codeigniter"
+	},
+	"PHP endif": {
+		"scope": "php, html",
+		"prefix": "closeif",
+		"body": [
+			"<?php endif; ?>",
+			"$0"
+		],
+		"description": "Enclousure tags php for endif"
+	},
+	"PHP userdata": {
+		"scope": "php, html",
+		"prefix": "userdata",
+		"body": [
+			"\\$this->session->userdata('$1');",
+			"$0"
+		],
+		"description": "Userdata session variable"
+	},
+	"PHP model": {
+		"scope": "php, html",
+		"prefix": "model",
+		"body": [
+			"\\$this->${1:model_name}->${2:function}($3);",
+			"$0"
+		],
+		"description": "Call method in model"
+	},
+	"element array PHP": {
+		"scope": "php, html",
+		"prefix": "element",
+		"body": [
+			"'$1' => \\$$2 $0"
+		],
+		"description": "New array element"
+	},
+	"PHP is_ajax": {
+		"scope": "php",
+		"prefix": "is_ajax",
+		"body": [
+			"\\$this->input->is_ajax_request()$0"
+		],
+		"description": "Boolean if this method is an ajax request"
+	},
+}
