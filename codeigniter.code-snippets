@@ -1,7 +1,7 @@
 {
 	"New translation variable": {
 		"scope": "php, html",
-		"prefix": "lan",
+		"prefix": "lang",
 		"body": [
 			"\\$lang['$1'] = \"$2\";"
 		],
@@ -14,5 +14,52 @@
 			"<?php echo lang('$1'); ?>"
 		],
 		"description": "Imprime una varibale del diccionario"
+	},
+
+	"PHP form open": {
+		"scope": "php, html",
+		"prefix": "openf",
+		"body": [
+			"<?php \\$definitions = array('accept-chartset' => 'utf-8', 'method'=> 'POST', 'name' => '${1:name}', 'id' => '${2:name}' );",
+			"\t\t\techo form_open(\"${3:action}\", \\$definitions); ?>",
+			"$0"
+		],
+		"description": "Form open with codeigniter"
+	},
+	"PHP form close": {
+		"scope": "php, html",
+		"prefix": "closef",
+		"body": [
+			"<?php echo form_close(); ?>",
+			"$1"
+		],
+		"description": "Form close with codeigniter"
+	},
+	"PHP userdata": {
+		"scope": "php, html",
+		"prefix": "userdata",
+		"body": [
+			"\\$this->session->userdata('$1');",
+			"$0"
+		],
+		"description": "Userdata session variable"
+	},
+	"PHP model": {
+		"scope": "php, html",
+		"prefix": "model",
+		"body": [
+			"\\$this->${1:model_name}->${2:function}($3);",
+			"$0"
+		],
+		"description": "Call method in model"
+	},
+	"data Codeigniter": {
+		"scope": "php",
+		"prefix": "adata",
+		"body": [
+			"\\$data['$1']= $2;",
+			"$0"
+		],
+		"description": "data element for view"
 	}
 }
