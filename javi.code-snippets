@@ -12,7 +12,7 @@
 		"body": [
 			"<?php $1 ?> $2"
 		],
-		"description": "Enclousure tags php for views"
+		"description": "Enclousure tags php for  views"
 	},
 	"PHP echo": {
 		"scope": "php, html, javascript",
