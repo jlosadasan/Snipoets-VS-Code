@@ -1,0 +1,72 @@
+{
+	"Generate Git Ignore file": {
+		"scope": "plaintext",
+		"prefix": "ignore",
+		"body": [
+			"#### Compiled source",
+			"*.com",
+			"*.class",
+			"*.dll",
+			"*.exe",
+			"*.o",
+			"*.so",
+			
+			"#### Packages",
+			"*.7z",
+			"*.dmg",
+			"*.gz",
+			"*.iso",
+			"*.jar",
+			"*.rar",
+			"*.tar",
+			"*.zip",
+			
+			"#### Logs and databases",
+			"*.log",
+			"*.sql",
+			"*.sqlite",
+			
+			"#### Config files",
+			".*",
+			"*.db",
+			"*.ini",
+			"*.dat",
+			".git/",
+			
+			"#### OS generated files",
+			".DS_Store",
+			".DS_Store?",
+			"._*",
+			".Spotlight-V100",
+			".Trashes",
+			"ehthumbs.db",
+			"Thumbs.db",
+			
+			"#### Minified resources",
+			"*.min.css",
+			"*.min.js",
+			"*.map",
+			
+			
+			"#### Apps files",
+			"*.fla",
+			"*.psd",
+			"*.doc",
+			"*.docx",
+			"*.pdf",
+			
+			"#### Folders",
+			"_recursos",
+			"sounds/",
+			"video/",
+			"docs/",
+			"_fla/",
+			"objetos/",
+			"_notes/",
+			"controldata/",
+			"system/",
+			".vscode/"
+		],
+		"description": "Generate Git Ignore file"
+	}
+}
