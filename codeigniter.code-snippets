@@ -61,5 +61,14 @@
 			"$0"
 		],
 		"description": "data element for view"
+	},
+	"post Codeigniter": {
+		"scope": "php, html",
+		"prefix": "ipost",
+		"body": [
+			"\\$this->input->post('$1');",
+			"$0"
+		],
+		"description": "input for post data"
 	}
 }
