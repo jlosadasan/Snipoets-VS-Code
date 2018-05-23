@@ -70,5 +70,16 @@
 			"$0"
 		],
 		"description": "input for post data"
+	},
+	"views Codeigniter": {
+		"scope": "php",
+		"prefix": "viewblock",
+		"body": [
+			"\\$this->load->view('templates/header', $1);",
+			"\\$this->load->view('$2', $3);",
+			"\\$this->load->view('templates/footer', $3);",
+			"$0"
+		],
+		"description": "input for post data"
 	}
 }
