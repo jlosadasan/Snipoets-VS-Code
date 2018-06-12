@@ -5,7 +5,7 @@
 		"body": [
 			"\\$lang['$1'] = \"$2\";"
 		],
-		"description": "Crear una nueva variable para el diccionario"
+		"description": "create a new variable in dictionary"
 	},
 	"Echo $lang": {
 		"scope": "php, html",
@@ -13,7 +13,7 @@
 		"body": [
 			"<?php echo lang('$1'); ?>"
 		],
-		"description": "Imprime una varibale del diccionario"
+		"description": "Print a new variable in dictionary"
 	},
 
 	"PHP form open": {
@@ -26,12 +26,22 @@
 		],
 		"description": "Form open with codeigniter"
 	},
+	"PHP form open with hidden inputs": {
+		"scope": "php, html",
+		"prefix": "openfh",
+		"body": [
+			"<?php \\$hidden_inputs = array(${1:oculto} => \\$$2);",
+			"\\$definitions = array('accept-chartset' => 'utf-8', 'method'=> 'POST', 'name' => '${3:name}', 'id' => '${4:name}' );",
+			"\t\t\techo form_open(\"${5:action}\", \\$definitions, \\$hidden_inputs); ?>",
+			"$0"
+		],
+		"description": "Form open with codeigniter add hidden inputs"
+	},
 	"PHP form close": {
 		"scope": "php, html",
 		"prefix": "closef",
 		"body": [
-			"<?php echo form_close(); ?>",
-			"$1"
+			"<?php echo form_close(); ?>$0"
 		],
 		"description": "Form close with codeigniter"
 	},
@@ -39,8 +49,7 @@
 		"scope": "php, html",
 		"prefix": "userdata",
 		"body": [
-			"\\$this->session->userdata('$1');",
-			"$0"
+			"\\$this->session->userdata('$1');$0"
 		],
 		"description": "Userdata session variable"
 	},
@@ -48,8 +57,7 @@
 		"scope": "php, html",
 		"prefix": "model",
 		"body": [
-			"\\$this->${1:model_name}->${2:function}($3);",
-			"$0"
+			"\\$this->${1:model_name}->${2:function}($3);$0"
 		],
 		"description": "Call method in model"
 	},
@@ -66,8 +74,7 @@
 		"scope": "php, html",
 		"prefix": "ipost",
 		"body": [
-			"\\$this->input->post('$1');",
-			"$0"
+			"\\$this->input->post('$1');$0",
 		],
 		"description": "input for post data"
 	},
@@ -77,8 +84,7 @@
 		"body": [
 			"\\$this->load->view('templates/header', $1);",
 			"\\$this->load->view('$2', $3);",
-			"\\$this->load->view('templates/footer', $3);",
-			"$0"
+			"\\$this->load->view('templates/footer', $3);$0"
 		],
 		"description": "input for post data"
 	}

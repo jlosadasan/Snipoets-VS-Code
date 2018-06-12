@@ -18,13 +18,13 @@
 		"scope": "php, html, javascript",
 		"prefix": "pecho",
 		"body": [
-			"<?php echo $$1; ?> $2"
+			"<?php echo \\$$1; ?> $0"
 		],
 		"description": "Enclousure tags php for echo variable"
 	},
-	"JS ajax": {
+	"JS ajax POST": {
 		"scope": "javascript, typescript",
-		"prefix": "ajax",
+		"prefix": "ajaxp",
 		"body": [
 			"\\$.ajax({",
 			"\tmethod:'POST',",
@@ -36,17 +36,33 @@
 			"\terror: function(data){",
 			"\t\t $4",
 			"\t},",
-			"});",
-			"$0"
+			"});$0",
 		],
-		"description": "Ajax function for jquery"
+		"description": "Ajax function for jquery with POST method"
+	},
+	"JS ajax POST": {
+		"scope": "javascript, typescript",
+		"prefix": "ajaxg",
+		"body": [
+			"\\$.ajax({",
+			"\tmethod:'GET',",
+			"\turl:'${1:controller}',",
+			"\tdata:'${2:data json}',",
+			"\tsuccess: function(data){",
+			"\t\t $3",
+			"\t},",
+			"\terror: function(data){",
+			"\t\t $4",
+			"\t},",
+			"});$0",
+		],
+		"description": "Ajax function for jquery with GET method"
 	},
 	"PHP endif": {
 		"scope": "php, html",
 		"prefix": "closeif",
 		"body": [
-			"<?php endif; ?>",
-			"$0"
+			"<?php endif; ?>$0"
 		],
 		"description": "Enclousure tags php for endif"
 	},
@@ -54,7 +70,7 @@
 		"scope": "php, html",
 		"prefix": "element",
 		"body": [
-			"'$1' => \\$$2 $0"
+			"'$1' => \\$$2,$0"
 		],
 		"description": "New array element"
 	},
