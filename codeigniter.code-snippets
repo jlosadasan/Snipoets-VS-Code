@@ -30,8 +30,8 @@
 		"scope": "php, html",
 		"prefix": "openfh",
 		"body": [
-			"<?php \\$hidden_inputs = array(${1:oculto} => \\$$2);",
-			"\\$definitions = array('accept-chartset' => 'utf-8', 'method'=> 'POST', 'name' => '${3:name}', 'id' => '${4:name}' );",
+			"<?php \\$hidden_inputs = array('${1:oculto}' => \\$${2:var_hidden});",
+			"\t\t\t\\$definitions = array('accept-chartset' => 'utf-8', 'method'=> 'POST', 'name' => '${3:name}', 'id' => '${4:name}' );",
 			"\t\t\techo form_open(\"${5:action}\", \\$definitions, \\$hidden_inputs); ?>",
 			"$0"
 		],

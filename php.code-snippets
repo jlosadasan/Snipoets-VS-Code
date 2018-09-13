@@ -40,7 +40,7 @@
 		],
 		"description": "Ajax function for jquery with POST method"
 	},
-	"JS ajax POST": {
+	"JS ajax GET": {
 		"scope": "javascript, typescript",
 		"prefix": "ajaxg",
 		"body": [
@@ -81,5 +81,45 @@
 			"\\$this->input->is_ajax_request()$0"
 		],
 		"description": "Boolean if this method is an ajax request"
+	}, 
+	"HTML modal BootStrap 3.0": {
+		"scope": "html",
+		"prefix": "modal",
+		"body": [
+			"<div class='modal fade' id='${1:id_modal}' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel'>",
+				"\t<div class='modal-dialog ${2:model-lg-sm}' role='document'>",
+					"\t\t<div class='modal-content'>",
+						"\t\t\t<div class='modal-header'>",
+							"\t\t\t\t<button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>",
+							"\t\t\t\t<h4 class='modal-title'>Modal title</h4>",
+						"\t\t\t</div>",
+						"\t\t\t<div class='modal-body'>",
+							"\t\t\t\t<p>Modal body text goes here.</p>",
+						"\t\t\t</div>",
+						"\t\t\t<div class='modal-footer'>",
+							"\t\t\t\t<button type='button' class='btn btn-primary'>Save changes</button>",
+							"\t\t\t\t<button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>",
+						"\t\t\t</div>",
+					"\t\t</div>",
+				"\t</div>",
+			"</div>$0",
+		],
+		"description": "Boolean if this method is an ajax request"
+	},
+	"echo PHP": {
+		"scope": "php, html",
+		"prefix": "echov",
+		"body": [
+			"<?php echo \\$$1; ?>$0"
+		],
+		"description": "input for post data"
+	},
+	"var_dump PHP": {
+		"scope": "php, html",
+		"prefix": "vardump",
+		"body": [
+			"<?php var_dump(\\$$1); ?>$0"
+		],
+		"description": "input for post data"
 	}
 }
