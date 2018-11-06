@@ -121,5 +121,25 @@
 			"<?php var_dump(\\$$1); ?>$0"
 		],
 		"description": "input for post data"
+	},
+	"public function PHP": {
+		"scope": "php",
+		"prefix": "function",
+		"body": [
+			"\tpublic function ${1:name_function}(\\$${2:param}){",
+			"\t\t$0",
+			"\t}",
+		],
+		"description": "input for post data"
+	},
+	"private function PHP": {
+		"scope": "php",
+		"prefix": "pfunction",
+		"body": [
+			"\tprivate function ${1:name_function}(\\$${2:param}){",
+			"\t\t$0",
+			"\t}",
+		],
+		"description": "input for post data"
 	}
 }
