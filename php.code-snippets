@@ -140,6 +140,17 @@
 			"\t\t$0",
 			"\t}",
 		],
+		"description": "input for post data",
+	},
+	"enclosure vardump PHP": {
+		"scope": "php",
+		"prefix": "evardump",
+		"body": [
+			"echo '<pre>';",
+			"var_dump(\\$${1:name_var});",
+			"echo '</pre>'",
+			"$0",
+		],
 		"description": "input for post data"
-	}
+	},
 }
