@@ -86,6 +86,46 @@
 			"\\$this->load->view('$2', $3);",
 			"\\$this->load->view('templates/footer', $3);$0"
 		],
-		"description": "input for post data"
+		"description": "view block for controller"
+	},
+	"database shortcuts select": {
+		"scope": "php",
+		"prefix": "dbs",
+		"body": [
+			"\\$this->db->select('$1');$0",
+		],
+		"description": "line to include query builder SELECT"
+	},
+	"database shortcuts where": {
+		"scope": "php",
+		"prefix": "dbw",
+		"body": [
+			"\\$this->db->where('${1:element}', \\$${2:var});$0",
+		],
+		"description": "line to include query builder WHERE"
+	},
+	"database shortcuts join": {
+		"scope": "php",
+		"prefix": "dbj",
+		"body": [
+			"\\$this->db->join('${1:table}', $2, ${1:type});$0",
+		],
+		"description": "line to include query builder JOIN"
+	},
+	"database shortcuts from": {
+		"scope": "php",
+		"prefix": "dbf",
+		"body": [
+			"\\$this->db->from('${1:table}');$0",
+		],
+		"description": "line to include query builder FROM"
+	},
+	"database shortcuts get": {
+		"scope": "php",
+		"prefix": "dbg",
+		"body": [
+			"\\$this->db->get('${1:table}');$0",
+		],
+		"description": "line to include query builder GET"
 	}
 }
